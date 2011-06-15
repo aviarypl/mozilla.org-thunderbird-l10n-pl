@@ -1,80 +1,19 @@
 <?php
 
-    $page_title       = "Thunderbird - poczta na Twój sposób";
-    $meta_description = "Thunderbird - potężny i rozszerzalny klient poczty od Mozilli.";
+    $page_title       = "Thunderbird - Holen Sie sich Ihren Posteingang zurück";
+    $meta_description = "Thunderbird ist das mächtige und anpassbare E-Mail-Programm von Mozilla.";
 
     @include_once "{$config['file_root']}/includes/l10n/thunderbird.inc.php";
 ?>
 
 <div id="main-feature">
-
-  <h2>Thunderbird 3.1</h2>
-
-  <p class="extra-margin">Thunderbird 3.1 posiada karty, lepsze wyszukiwanie oraz archiwizowanie wiadomości.</p>
-
-  <?=$downloadbox?>
-
+    <h2>Software made to make email easier.</h2>
+    <h3 style="width: 430px">Thunderbird is a free email application that's easy to set up and customize - and it's loaded with great features!</h3>
+    <img class="screenshot" alt="Thunderbird screenshot" src="/thunderbird/img/tb5/main-feature.png">
+    <div id='home-download'>
+    <?=$downloadbox?>
+    </div>
 </div>
-
-
-  <?=$sidemenu?>
-
-<div id="thunderbird-feature" class="pager pager-with-tabs">
-
-  <div id="thunderbird-feature-header">
-
-    <h3>Co nowego w Thunderbirdzie&nbsp;3.1?</h3>
-
-    <ul id="thunderbird-feature-nav" class="pager-tabs">
-      <li><a href="#feature-upgrade">Łatwa aktualizacja</a></li>
-      <li><a href="#feature-organize">Karty i wyszukiwanie</a></li>
-      <li><a href="#feature-customize">Dodatki i rozszerzalność</a></li>
-      <li><a href="#feature-secure">Łatwy start</a></li>
-    </ul>
-  </div>
-
-  <div class="pager-content">
-        <div class="thunderbird-feature-contents" id="feature-upgrade">
-            <script type="text/javascript">// <![CDATA[
-            document.getElementById('feature-upgrade').id = 'page-feature-upgrade';
-            // ]]></script>
-        <h4>Łatwa aktualizacja</h4>
-        <p>Dołożyliśmy wszelkich starań, aby uprościć migrację do Thunderbirda 3.1 ze starszych wersji oraz innych programów pocztowych jak Outlook, Outlook Express lub Windows Mail.</p>
-        <p>Nowy asystent migracji ułatwia konfigurację Thunderbirda w wybrany sposób, a narzędzia importowania pomogą przenieść wiadomości, książki adresowe i ustawienia ze starego programu pocztowego do Thunderbirda 3.1.</p>
-        <p><a href="/<?=$lang?>/thunderbird/features/#easy-upgrade">Dowiedz się więcej</a></p>
-        </div>
-
-    <div class="thunderbird-feature-contents" id="feature-tabs-search">
-      <script type="text/javascript">// <![CDATA[
-      document.getElementById('feature-tabs-search').id = 'page-feature-tabs-search';
-      // ]]></script>      <h4>Karty i wyszukiwanie</h4>
-      <p>Jeżeli używasz kart w swojej przeglądarce internetowej, karty w Thunderbirdzie powinny również przypaść Ci do gustu. Thunderbird 3.1 otwiera wiadomości w osobnych kartach, umożliwiając szybkie przełączanie między nimi.</p>
-      <p>Również wyniki wyszukiwania zostaną otworzone w nowej karcie. Nowe narzędzia pozwolą wygodnie odfiltrować poszukiwane wiadomości lub zawęzić całe wyszukiwanie do wybranego okresu niezależnie od tego, kiedy i przez kogo wiadomość została wysłana.</p>
-      <p><a href="/pl/thunderbird/features/#tabs-search">Dowiedz się więcej</a></p>
-    </div>
-
-    <div class="thunderbird-feature-contents" id="feature-customize">
-      <script type="text/javascript">// <![CDATA[
-      document.getElementById('feature-customize').id = 'page-feature-customize';
-      // ]]></script>      <h4>Twoja poczta na Twój sposób</h4>
-      <p>Thunderbirda można dopasować do własnych, nawet najbardziej niezwykłych, upodobań - wszystko za pomocą tysięcy dodatków.</p>
-      <p>Niezależnie, czy chcesz tylko zmienić wygląd za pomocą minimotywów Personas, czy dodać funkcję kalendarza, instalując rozszerzenie Lightning, możesz to zrobić bezpośrednio z menedżera dodatków.</p>
-      <p><a href="/pl/thunderbird/features/#customize-email">Dowiedz się więcej</a></p>
-    </div>
-
-    <div class="thunderbird-feature-contents" id="feature-setup">
-      <script type="text/javascript">// <![CDATA[
-      document.getElementById('feature-setup').id = 'page-feature-setup';
-      // ]]></script>      <h4>Łatwy start</h4>
-      <p>We wcześniejszych wersjach, aby skonfigurować konto pocztowe, należało wprowadzić szczegółowe informacje o POP/IMAP, SMTP, SSL/TLS itd... Teraz potrzebne będą jedynie nazwa użytkownika, adres e-mail oraz hasło - reszta zostanie ustawiona automatycznie.</p>
-      <p>W przypadkach, kiedy program nie będzie w stanie wykryć najlepszej konfiguracji, można dodać ją do bazy konfiguracji gromadzonych przez społeczność - dzięki temu następnym razem będzie łatwiej.</p>
-      <p><a href="/pl/thunderbird/features/#get-started">Dowiedz się więcej</a></p>
-    </div>
-
-  </div>
-
-</div>
-
 
 <?php
     echo $jscall;
