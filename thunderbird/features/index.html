@@ -1,151 +1,221 @@
 <?php
 
-    $page_title       = "Możliwości Thunderbirda 3.1";
-    $meta_description = "Thunderbird - potężny i rozszerzalny klient poczty od Mozilli.";
+    $page_title       = "Mozilla Thunderbird - Features";
+    $meta_description = "Thunderbird makes email better for you, bringing together speed, privacy and latest technologies. Learn more.";
 
 
     @include_once "{$config['file_root']}/includes/l10n/thunderbird-features.inc.php";
 ?>
 
-<div id="main-feature">
-  <h2><a href="/pl/thunderbird/">Możliwości Thunderbirda&nbsp;3.1</a></h2>
-  <p class="product-intro">Jest cały dla Ciebie.<br />Nowy Thunderbird jest szybszy, bardziej elastyczny i bezpieczniejszy.</p>
-  <p class="feature-links">Kategorie:</p>
-  <ul>
-    <li><a href="#get-started">Łatwy start</a></li>
-    <li><a href="#tabs-search">Karty i wyszukiwanie</a></li>
-    <li><a href="#customize-email">Dodatki i rozszerzalność</a></li>
-    <li><a href="#secure-protect">Bezpieczna poczta</a></li>
-  </ul>
-</div>
+<?=$features_downloadbox?>
 
-<?=$sidemenu?>
+<div id="main-feature">
+    <h2>Thunderbird <span>Features</span></h2>
+    <p>It's all yours. It's now easier to upgrade to Thunderbird.</p>
+    <ul class="feature-links">
+        <li id="get-started"><a href="#getstarted"><span class="feature-link-content">Easier to <span>Get Started</span></span></a></li>
+        <li id="tabs-search"><a href="#tabssearch"><span class="feature-link-content">Tabs and Search <span></span></span></a></li>
+        <li id="customize"><a href="#customize-email"><span class="feature-link-content">Customize Your <span>Email Experience</span></span></a></li>
+        <li id="secure-protect"><a href="#secureprotect"><span class="feature-link-content">Secure and Protect<span>Your Email</span></span></a></li>
+    </ul>
+
+    <div id="top-features">
+        <h3>Top <span>Features</span></h3>
+        <p>(rollover for details)</p>
+        <ul>
+            <li>
+                <a href="#getstarted">Easier to Get Started</a>
+                <div class="top-feature-hover">
+                    <h3>Easier to Get Started</h3>
+                    <p>Getting setup with the new Thunderbird has never been easier!</p>
+                </div>
+            </li>
+            <li>
+                <a href="#tabssearch">Tabs and Search</a>
+                <div class="top-feature-hover">
+                    <h3>Tabs and Search</h3>
+                    <p>Thunderbird improves the way you use email with tabbed email and faster search.</p>
+                </div>
+            </li>
+            <li>
+                <a href="#customize-email">Customize Your Email Experience</a>
+                <div class="top-feature-hover">
+                    <h3>Customize Your Email Experience</h3>
+                    <p>Thousands of add-ons give you the freedom to make Thunderbird your own.</p>
+                </div>
+            </li>
+            <li>
+                <a href="#secureprotect">Secure and Protect Your Email</a>
+                <div class="top-feature-hover">
+                    <h3>Secure and Protect Your Email</h3>
+                    <p>Keep your email secure!</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
 
 <div id="content">
-<div id="get-started">
-  <h2>Łatwy start</h2>
-  <p>Konfiguracja Thunderbirda 3.1 jest znacznie prostsza, a niektóre z nowych możliwości ułatwią również codzienne użytkowanie.</p>
-</div>
 
-<div id="account-setup-wizard">
-  <img src="/img/thunderbird/features/screenshot-setup.jpg" alt="screenshot-setup" />
-  <h4>Konfiguracja kont pocztowych</h4>
-  <p>We wcześniejszych wersjach, aby skonfigurować konto pocztowe, należało wprowadzić szczegółowe informacje o POP/IMAP, SMTP, SSL/TLS itd... Teraz potrzebne będą jedynie nazwa użytkownika, adres e-mail oraz hasło - reszta zostanie ustawiona automatycznie.</p>
-</div>
+    <div id="getstarted" class="features-box">
+    <div class="features-container">
+        <a href="#main-feature" class="features-top-link">Return to top</a>
+        <h3>Easier to <span>Get Started</span></h3>
+        
+        <div class="feature">
+            <h4>Migration Assistant</h4>
+            <img class="right" alt="Migration Assistant screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/migration-assistant.png">
+            <p>Under the Help Menu, you can find the Migration Assistant to help you set up Thunderbird the way you want it. If you liked the old toolbar from Thunderbird 2, you can quickly make that change with the Migration Assistant. You can also install add-ons from the Migration Assistant like Advanced Folder Columns and Compact Header for your message display window.</p>
+        </div>
+        
+        <hr />
+        
+        <div class="feature">
+            <img class="left" alt="Mail Account Setup Wizard screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/mail-account-setup.png">
+            <div class="column2">
+                <h4>Mail Account Setup Wizard</h4>
+                <p>Prior to this feature you had to know your IMAP, SMTP, and SSL/TLS settings. Now all you need to provide is your name, email address, and password and the  email account set up wizardry will check our database and find the email settings for you.</p>
+          </div>
+        </div>
+        
+        <hr />
+        
+        <div class="feature">
+            <h4>One-click Address Book</h4>
+            <img class="right" alt="One-click Address Book screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/address-book.png">
+            <p>One-click Address Book is a quick and easy way to add people to your address book. Add people by simply clicking on the star icon in the message you receive. Two clicks and you can add more details like a photo, birthday, and other contact information.</p>
+        </div>
+        
+        <hr />
+        
+        <div class="feature">
+            <img class="left" alt="Attachment Reminder screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/attachment-reminder.png">
+            <div class="column2">
+                <h4>Attachment Reminder</h4>
+                <p>The attachment reminder looks for the word attachment(and other words like file types) in the body of your message and reminds you to add an attachment before hitting send.</p>
+          </div>
+        </div>
+        
+        <hr />
+        
+        <div class="feature">
+            <h4>Activity Manager</h4>
+            <img class="right" alt="Activity Manager screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/activity-manager.png">
+            <p>The Activity Manager records all the interactions between Thunderbird and your email provider in one place. There's no more guess work. You only have to look in one place to see everything that's happening with your email.</p>
+        </div>
+        
+    </div>
+    </div>
 
-<div id="one-click">
-  <img src="/img/thunderbird/features/screenshot-oneclick.jpg" alt="screenshot-oneclick" />
-  <h4>Zarządzanie kontaktami</h4>
-  <p>Wystarczy jedno kliknięcie, aby dodać nowy kontakt do książki adresowej. Klikając gwiazdkę w nagłówku wiadomości, możesz dodać wizytówkę do książki adresowej; klikając dwa razy, możesz dodać więcej szczegółów jak zdjęcie, data urodzin, numer telefonu i inne.</p>
-</div>
+    <div id="tabssearch" class="features-box">
+    <div class="features-container">
+        <a href="#main-feature" class="features-top-link">Return to top</a>
+        <h3>Tabs and <span>Search</span></h3>
+        
+        <div class="feature">
+            <h4>Quick Filter Toolbar</h4>
+            <img class="right" alt="Quick Filter Toolbar screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/quick-filter-toolbar.png">
+            <p>The Quick Filter Toolbar lets you filter your email faster. Start typing in words in the Quick Filter search box and the results are displayed instantly. Or you can filter your email by New Messages, Tags, and people in your Address Book. You can also "Pin" or save a Filter and use it across multiple folders.</p>
+      </div>
+        
+        <hr />
+        
+        <div class="feature">
+            <div class="column1">
+                <h4>Tabs</h4>
+                <p>If you like Firefox's tabbed browsing, you're going to love tabbed email. Tabbed email lets you load emails in separate tabs so you can quickly jump between them. Perhaps you're responding to an email and need to refer back to an earlier email. Tabbed email lets you keep multiple emails open for easy reference.</p>
+                <p>Double-clicking or hitting enter on a mail message will now open that message in a new tab window. Right-clicking on messages or folders will open them in a tab in the background.</p>
+                <p>When quitting Thunderbird, visible tabs will be saved and will be restored when you open Thunderbird the next time. There is also a  Tab menu on the Tab toolbar to help you switch between Tabs.</p>
+          </div>  
+            <div class="column2">
+                <h4>Search</h4>
+                <p>The search interface in Thunderbird contains filtering and timeline tools to pinpoint the exact email you're looking for. Thunderbird also indexes all of your emails to help you search even faster. Your search results are displayed in a tab so yuo can easily switch back and forth to your search results and other email.</p>
+          </div>
+            <img alt="Search screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/search.png">
+        </div>
+        
+        <hr />
+        
+        <div class="feature">
+            <img class="left" alt="Message Archive screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/message-archive.png">
+            <div class="column2">
+                <h4>Message Archive</h4>
+                <p>If you think you're going to need an email in the future but want it out of your inbox without deleting it, archive it! Archiving helps you manage your inbox and put your email into the archive folder system.</p>
+                <p>Selecting the Archive button or hitting the 'A" key will archive your email.</p>
+            </div>
+        </div>
+        
+    </div>
+    </div>
 
-<div id="attachment-reminder">
-  <img src="/img/thunderbird/features/screenshot-attachment.jpg" alt="screenshot-attachment" />
-  <h4>Przypomnienia o załącznikach</h4>
-  <p>Podczas tworzenia wiadomości sprawdzana jest ona pod kątem występowania słów mogących wskazywać na chęć dołączenia plików do wiadomości - gdy zostaną znalezione, Thunderbird wyświetli przypomnienie.</p>
-</div>
+    <div id="customize-email" class="features-box">
+    <div class="features-container">
+        <a href="#main-feature" class="features-top-link">Return to top</a>
+        <h3>Customize Your<span>Email Experience</span></h3>
+        
+        <div class="feature">
+            <div class="column1">
+                <h4>Thunderbird Look & Feel</h4>
+                <p>With Personas, lightweight "skins" allow you to change the look and feel of Thunderbird in an instant. Hundreds of skins are available from the latest movies, famous landmarks, and Japanese tattoos. You can also choose from several Themes that dress up all the different icons in Thunderbird.</p>
+                <h4>Smart Folders</h4>
+                <p>Smart Folders help you manage multiple email accounts by combining special folders like your Inbox, Sent, or Archive folder. Instead of going to the Inbox for each of your mail accounts, you can see all of your incoming email in one Inbox folder.</p>
+            </div>  
+            <div class="column2">
+                <h4>Add-ons Manager</h4>
+                <p>Find and install add-ons directly in Thunderbird. You no longer need to visit the add-ons Web site - instead simply fire up the Add-ons Manager. Not sure which add-on is right for you? Ratings, recommendations, descriptions and pictures of the add-ons in action help you make your selection.</p>
+            </div>
+            <img alt="Add-ons Manager screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/addon-manager.png">
+        </div>
+        
+    </div>
+    </div>
 
-<div id="activity-manager">
-  <img src="/img/thunderbird/features/screenshot-activitymanager.jpg" alt="screenshot-activitymanager" />
-  <h4>Menedżer aktywności</h4>
-  <p>Menedżer aktywności udostępnia informacje o wszelkich operacjach związanych z obsługą kont pocztowych wykonywanych przez Thunderbirda i wszystko to zgromadzone w jednym miejscu.</p>
-</div>
-
-<p class="return-top"><a href="#"><?php echo ___('Return to top'); ?></a></p>
-
-<div id="get-organized">
-  <h2 id="tabs-search">Karty i wyszukiwanie</h2>
-  <p>Thunderbird 3.1, dzięki kartom i nowym narzędziom wyszukiwania, zmieni sposób, w jaki korzystasz z poczty.</p>
-</div>
-
-<div id="quick-filter">
- <img src="/img/thunderbird/features/screenshot-quickfilter.jpg" alt="screenshot-attachment" width="400" height="132" />
- <h4>Pasek szybkiego filtrowania</h4>
- <p>Nowy pasek szybkiego filtrowania pozwala szybciej odnajdywać wiadomości. Wyniki filtrowania są wyświetlane "na żywo" podczas wpisania słów. Pasek umożliwia także odfiltrowanie po nowych wiadomościach, etykietach i kontaktach z książki adresowej. Możliwe jest także "przypięcie" lub zachowanie filtru w celu wykorzystania w innych folderach.</p>
-</div>
-
-<div id="message-tagging">
-  <h4>Karty</h4>
-  <p>Jeżeli używasz kart w swojej przeglądarce internetowej, karty w Thunderbirdzie powinny również przypaść Ci do gustu. Thunderbird 3.1 otwiera wiadomości w osobnych kartach, umożliwiając szybkie przełączanie między nimi z zachowaniem kontekstu, nie zmuszając do ponownego ich odnajdywania.</p>
-  <p>Podwójne kliknięcie na wiadomości otworzy ją w nowej karcie. Używając menu kontekstowego lub klikając środkowym przyciskiem myszy, można otwierać nowe karty z wiadomościami lub folderami w tle.</p>
-  <p>Przy wyjściu z programu widoczne karty zostaną zapisane i przywrócone przy następnym uruchomieniu Thunderbirda. Na pasku kart znajduje się także menu, które dodatkowo ułatwia przełączanie się między kartami.</p>
-</div>
-
-<div id="improved-search">
-  <h4>Wyszukiwanie</h4>
-  <p>Nowy interfejs wyszukiwania w Thunderbirdzie 3.1 zawiera narzędzia filtrowania i zawężania przeszukiwanego okresu, aby łatwiej odszukać wiadomości. Dodatkowo, Thunderbird 3.1 indeksuje wszystkie wiadomości, aby wyszukiwanie przebiegało jeszcze szybciej. Wyniki wyszukiwania zostaną wyświetlone w nowej karcie, aby umożliwić łatwe przełączanie się pomiędzy przeglądanymi wiadomościami a wynikami wyszukiwania.</p>
-  <img src="/img/thunderbird/features/screenshot-tabs-search.jpg" alt="screenshot-tabs-search" />
-</div>
-
-<div id="message-archive">
-  <img src="/img/thunderbird/features/screenshot-message-archive.jpg" alt="screenshot-message-archive" />
-  <h4>Archiwizowanie wiadomości</h4>
-  <p>Jeżeli przeczytana wiadomość może przydać się w przyszłości, ale nie chcesz, aby zalegała w folderze Odebrane, możesz ją przenieść do archiwum. Nowy system archiwizacji ułatwia organizację bieżącej pracy i organizuje wiadomości w chronologicznych folderach.</p>
-  <p>Wybierając przycisk Archiwizuj lub używając skrótu klawiaturowego ‘A’, łatwo przeniesiesz zaznaczone wiadomości do archiwum.</p>
-</div>
-
-<p class="return-top" id="customize-email"><a href="#"><?php echo ___('Return to top'); ?></a></p>
-
-<div id="customize-experience">
-  <h2>Dodatki i rozszerzalność</h2>
-  <p>Thunderbirda można dopasować do własnych, nawet najbardziej niezwykłych, upodobań. Możesz zmieniać wygląd programu lub dodawać nowe możliwości.</p>
-</div>
-
-<div id="yourmail-yourway">
-  <h4>Wygląd</h4>
-  <p>Dzięki minimotywom Personas można bez restartu aplikacji zmieniać jej wygląd. Dostępne są tysiące skórek inspirowanych filmami, znanymi widokami oraz wymyślnymi grafikami. Można również instalować "pełne" motywy, kompletnie zmieniające wygląd programu.</p>
-
-  <h4>Pogrupowane foldery</h4>
-  <p>Pogrupowane foldery ułatwiają zarządzanie wieloma kontami, grupując foldery o specjalnym przeznaczeniu jak Wysłane, Odebrane czy Archiwum. Zamiast sprawdzać każdy folder Odebrane osobno dla każdego konta, można wyświetlić zawartość ich wszystkich w jednym folderze.</p>
-</div>
-
-<div id="addonsmanager-extensions">
-  <h4>Menedżer dodatków</h4>
-  <p>Wyszukuj i instaluj dodatki bezpośrednio z Thunderbirda. Aby zainstalować dodatek, nie trzeba już odwiedzać żadnej strony — wystarczy otworzyć menedżer dodatków. Oceny, rekomendacje, opisy i zrzuty pomogą w odnalezieniu tych właściwych dodatków.</p>
-  <img src="/img/thunderbird/features/screenshot-addonsmanager.jpg" alt="screenshot-addonsmanager" />
-</div>
-
-<p class="return-top"><a href="#"><?php echo ___('Return to top'); ?></a></p>
-
-
-<div id="secure-protect">
-  <div id="secure-protect2"></div>
-  <div id="open-source2"></div>
-  <h2>Bezpieczna poczta</h2>
-  <p>Ustawienia prywatności i bezpieczeństwa Thunderbirda chronią Twoje dane i osobiste informacje.</p>
-</div>
-
-<div id="cuttingout-junk">
-  <h4>Niechciana poczta</h4>
-  <p>Narzędzia filtrowania niechcianych wiadomości zostały uaktualnione, aby jeszcze lepiej radziły sobie ze spamem. Każda przychodząca wiadomość jest sprawdzana przez nowe filtry. Za każdym razem, gdy wiadomość zostanie ręcznie oznaczona jako niepożądana, filtry Thunderbirda nauczą się lepiej rozpoznawać przesyłki tego typu, przenosząc je tam, gdzie ich miejsce. Filtry mogą również wykorzystywać nagłówki oceny wiadomości pod kątem spamu dołączane przez dostarczycieli poczty.</p>
-</div>
-
-<div id="robust-privacy">
-  <h4>Ochrona prywatności</h4>
-  <p>Thunderbird dba o zachowanie prywatności użytkownika, domyślnie blokując wykonywanie kodu JavaScript oraz wyświetlanie zdalnej zawartości w wiadomościach.</p>
-</div>
-
-<div id="phishing-protection">
-  <img src="/img/thunderbird/features/screenshot-junk.jpg" alt="screenshot-junk" />
-  <h4>Ochrona przed phishingiem</h4>
-  <p>Thunderbird chroni przed wiadomościami starającymi się skłonić użytkownika do przekazania prywatnych danych, wyświetlając informację o możliwej próbie oszustwa. Innym sposobem ochrony są ostrzeżenia o otwieraniu odnośników prowadzących do innych stron WWW niż wynikałoby to z adresu umieszczonego w wiadomości.</p>
-</div>
-
-<div id="automated-update">
-  <img src="/img/thunderbird/features/screenshot-automatedupdate.jpg" alt="screenshot-automatedupdate" />
-  <h4>Automatyczne aktualizacje</h4>
-  <p>System automatycznych aktualizacji sprawdza, czy użytkownik używa najnowszej wersji programu, informując w razie konieczności o dostępnych uaktualnieniach. Pliki aktualizacji bezpieczeństwa są małe (przeważnie poniżej 1MB), aby uczynić proces aktualizacji możliwie szybkim i bezbolesnym. System automatycznych aktualizacji działa dla systemów Windows, Mac OS X oraz Linux, dostarczając poprawki w ponad 40 językach.</p>
-</div>
-
-<div id="open-source">
-  <h4>Open Source</h4>
-  <p>Natura open-source Thunderbirda pozwala deweloperom i ekspertom ds. bezpieczeństwa z całego świata wziąć udział w naprawianiu błędów i budowaniu silniejszych zabezpieczeń. Nasza otwartość i aktywna społeczność testerów pomaga nam odnajdywać i rozwiązywać problemy bezpieczeństwa w rekordowo krótkim czasie - dziesiątki tysięcy z nich sprawdzają codziennie nowe wersje programu.</p>
-</div>
-
-<p class="return-top"><a href="#"><?php echo ___('Return to top'); ?></a></p>
-
-
+    <div id="secureprotect" class="features-box">
+    <div class="features-container">
+        <a href="#main-feature" class="features-top-link">Return to top</a>
+        <h3>Secure and Protect <span>Your Mail</span></h3>
+        <div class="feature">
+            <div class="column1">
+                <h4>Cutting Out the Junk</h4>
+                <p>Thunderbird's popular junk mail tools have been updated to stay ahead of spam. Each email you receive passes through Thunderbird's leading-edge junk mail filters. Each time you mark messages as spam, Thunderbird "learns" and improves its filtering so you can spend more time reading the mail that matters. Thunderbird can also use your mail provider's spam filters to keep junk mail out of your inbox.</p>
+            </div>  
+            <div class="column2">
+                <h4>Robust Privacy</h4>
+                <p>Thunderbird offers support for user privacy and remote image protection. To ensure a user's privacy, Thunderbird automatically blocks remote images in email messages.</p>
+            </div>
+        </div>
+        
+        <hr />
+        
+        <div class="feature">
+            <img class="left" alt="Phishing Protection screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/phishing-protection.png">
+            <div class="column2">
+                <h4>Phishing Protection</h4>
+                <p>Thunderbird protects you from email scams which try to trick users into handing over personal and confidential information by indicating when a message is a potential phishing attempt. As a second line of defense, Thunderbird warns you when you click on a link which appears to be taking you to a different Web site than the one indicated by the URL in the message.</p>
+            </div>
+        </div>
+        
+        <hr />
+        
+        <div class="feature">
+            <h4>Automated Update</h4>
+            <img class="right" alt="Automated Update screenshot" src="<?=$config['static_prefix']?>/img/tb5/features/automated-update.png">
+            <p>Thunderbird's update system checks to see if you're running the latest version, and notifies you when a security update is available. These security updates are small (usually 200KB - 700KB), giving you only what you need and making the security update quick to download and install. The automated update system provides updates for Thunderbird on Windows, Mac OS X, and Linux in over 40 different languages.</p>
+        </div>
+        
+        <hr />
+        
+        <div class="feature">
+            <div class="column1">
+                <h4>Open Source</h4>
+                <p>At the heart of Thunderbird is an open source development process driven by thousands of passionate, experienced developers and security experts spread all over the world. Our openness and active community of experts helps to ensure our products are more secure and quickly updated, while also enabling us to take advantage of the best third party security scanning and evaluation tools to further bolster overall security.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
 </div><!-- end #content div -->
+<script src="/thunderbird/js/tb-features.js"></script>
 
 <?php
     @include_once "{$config['file_root']}/includes/l10n/footer.inc.php";
