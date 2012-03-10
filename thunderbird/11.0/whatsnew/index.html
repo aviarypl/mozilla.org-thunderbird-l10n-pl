@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="http://www.mozilla.org/thunderbird/img/favicon.ico" />
+    <title>Welcome to Thunderbird!</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    <?php include dirname(__FILE__).'/../../../../style/tb5/whatsnew.php'?>
+    </style>
+    <script src="/thunderbird/js/jquery/jquery-1.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/thunderbird/js/jquery/functions.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.open ul').show();
+        });    
+    </script>
+</head>
+
+<body>
+<div id="wrapper" class="clearfix">
+  <div id="header">Thanks for using Thunderbird!</div>
+    <div id="content">
+      <div class="column1">
+      </div>
+      <div class="column2">
+        <div class="contentHeader">
+          <h1>What's New in Thunderbird?</h1>
+          <p>We hope you enjoy all the new features in Thunderbird.  You can customize Thunderbird however you want, and with hundreds of add-ons to try, Thunderbird is all yours.</p>
+        </div>           
+        <div class="contentBody open">
+          <div class="toggle hbox">
+            <h2 class="boxFlex">Tabs above the menu bar</h2>
+            <span class="plus"><img src="/thunderbird/img/tb5/whatsnew/plus.png" alt="plus"></span>
+          </div>
+          <ul>
+            <li>This version of Thunderbird features a revised user interface with Tabs above the main menu bar to facilitate navigation and make it more contextual.</li>
+            <li><img src="<?=$img1?>" alt="tabs on top"></li>
+            <li><img src="<?=$img2?>" alt="tabs on top two"></li>
+          </ul>
+        </div>         
+        <div class="contentBody">
+          <div class="toggle hbox">
+            <h2 class="boxFlex">Faster, Safer, and More Stable</h2>
+            <span class="plus"><img src="/thunderbird/img/tb5/whatsnew/plus.png" alt="plus"></span>
+          </div>          
+          <ul>
+            <li>Thunderbird is more responsive and faster to start up and use</li>
+            <li>Thunderbird is based on the new <a href="https://developer.mozilla.org/en/Gecko">Mozilla Gecko 11 engine</a></li>
+            <li>Numerous platform fixes to improve <a href="/security/known-vulnerabilities/thunderbird.html">security</a> and product stability</li>
+          </ul>
+        </div>        
+        <div class="contentBody">
+          <div class="toggle hbox">
+            <h2 class="boxFlex">Just in case you missed it</h2>
+            <span class="plus"><img src="/thunderbird/img/tb5/whatsnew/plus.png" alt="plus"></span></div>
+            <ul>
+              <li>Search the Web in Thunderbird. <img src="<?=$img3?>" alt="Global Search"/></li>
+              <li>You can now search the Web without having to leave Thunderbird. Type whatever comes to mind in Thunderbird's search box and choose from several different search resources such as Bing, Twitter, Wikipedia, and several more to find the answer you need.<li>
+              <li>You can also highlight words in your email, right click and select "search the web for:" to start your Web search.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div id="footer">
+     <ul> 
+       <li><a href="../releasenotes/">Release Notes</a> &#187;</li>
+       <li><a href="../..">Thunderbird Home Page</a> &#187;</li>
+       <li><a href="https://support.mozillamessaging.com/">Thunderbird Help</a> &#187;</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
