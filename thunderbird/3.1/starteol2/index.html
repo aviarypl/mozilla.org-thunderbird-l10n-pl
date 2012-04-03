@@ -6,6 +6,7 @@
 <?php
     $extra_headers = <<<EXTRA_HEADERS
     <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/tb5/content.css" media="screen" />
+    <script type="text/javascript" src="/thunderbird/js/util.js"></script>
 EXTRA_HEADERS;
     echo $extra_headers;
 ?>
@@ -14,6 +15,7 @@ EXTRA_HEADERS;
   </style>
 </head>
 <body id="out-of-date">
+<?=$headjs?>
 <div id="doc">
   <div id="main-feature">
     <h2><span id="main-feature-msg">Clock is Ticking!</span></h2>
@@ -21,9 +23,7 @@ EXTRA_HEADERS;
   <div id="main-content">
       <p class="upgrade-msg">This version of Thunderbird will be obsolete from April 24th, 2012. You will no longer have the benefit of security and stability enhancements, therefore you will be at greater risk of security vulnerabilities and attack. We strongly recommend that you get the <a href="/thunderbird/">newest version now</a>.</p>
       <p class="upgrade-msg">You will not only enjoy a safer and faster email experience but also discover all the great features of the most up-to-date Thunderbird.</p>
-      <script type="text/javascript" src="/thunderbird/js/old/download.js"></script>
-      <?=$js?>
-      <?=$thunderbirdDetails->getNoScriptBlockForLocale($lang)?>
+      <?=$downloadbox?>
   </div>
 </div>
 
