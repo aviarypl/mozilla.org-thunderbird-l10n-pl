@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?=$lang?>" lang="<?=$lang?>" dir="ltr">
-<head>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl" dir="ltr">
+ <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Clock is Ticking!</title>
+  <title>Zegar tyka!</title>
 <?php
-    $extra_headers = <<<EXTRA_HEADERS
-    <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/tb5/content.css" media="screen" />
-    <script type="text/javascript" src="/thunderbird/js/util.js"></script>
+  $extra_headers = <<<EXTRA_HEADERS
+  <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/tb5/content.css" media="screen" />
+  <script type="text/javascript" src="/thunderbird/js/util.js"></script>
 EXTRA_HEADERS;
-    echo $extra_headers;
+  echo $extra_headers;
 ?>
   <style type="text/css">
-    <?php include dirname(__FILE__).'/../../../../style/tb5/out-of-date.php'?>
+   <?php include dirname(__FILE__).'/../../../../style/tb5/out-of-date.php'?>
   </style>
-</head>
-<body id="out-of-date">
-<?=$headjs?>
-<div id="doc">
-  <div id="main-feature">
-    <h2><span id="main-feature-msg">Clock is Ticking!</span></h2>
+ </head>
+ <body id="out-of-date">
+  <?=$headjs?>
+  <div id="doc">
+   <div id="main-feature">
+    <h2><span id="main-feature-msg">Zegar tyka!</span></h2>
+   </div>
+   <div id="main-content">
+    <p class="upgrade-msg">Ta wersja Thunderbirda przestanie być wspierana 24 kwietnia 2012 roku. Poprawki bezpieczeństwa i stabilności nie będą więcej wydawane dla tej wersji programu, co z czasem zwiększy podatność na różne zagrożenia. Stanowczo zachęcamy do aktualizacji Thunderbirda do <a href="/thunderbird/">najnowszej wersji</a>.</p>
+    <p class="upgrade-msg">Aktualizacje zapewniają nie tylko bezpieczeństwo i sprawniejsze działanie programu ale również umożliwiają wypróbowanie nowych funkcji.</p>
+    <?=$downloadbox?>
+   </div>
   </div>
-  <div id="main-content">
-      <p class="upgrade-msg">This version of Thunderbird will be obsolete from April 24th, 2012. You will no longer have the benefit of security and stability enhancements, therefore you will be at greater risk of security vulnerabilities and attack. We strongly recommend that you get the <a href="/thunderbird/">newest version now</a>.</p>
-      <p class="upgrade-msg">You will not only enjoy a safer and faster email experience but also discover all the great features of the most up-to-date Thunderbird.</p>
-      <?=$downloadbox?>
-  </div>
-</div>
-
-</body>
+ </body>
 </html>
-
