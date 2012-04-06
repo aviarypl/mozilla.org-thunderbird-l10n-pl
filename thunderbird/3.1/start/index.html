@@ -1,10 +1,15 @@
 <?php
     $l10n_name = "{$config['file_root']}/{$lang}/thunderbird/3.1/starteol/index.html";
     $localized_file = file($l10n_name);
+    $l10n_name_2 = "{$config['file_root']}/{$lang}/thunderbird/3.1/starteol2/index.html";
+    $localized_file_2 = file($l10n_name_2);
 
     //Check to see if file is still English, if it's translated, use the new localized page!
-    if (file_exists($l10n_name) && (substr($localized_file[27], 12, 28) != "You're using Thunderbird 3.1")) {
-        include_once "{$config['file_root']}/{$lang}/thunderbird/3.1/starteol/index.html"; 
+    if (file_exists($l10n_name_2) && (substr($localized_file_2[23], 29, 44) != "This version of Thunderbird will be obsolete")) {
+        include_once $l10n_name_2; 
+    }  
+    elseif (file_exists($l10n_name) && (substr($localized_file[27], 12, 28) != "You're using Thunderbird 3.1")) {
+        include_once $l10n_name; 
     }
     else {
         include_once "{$config['file_root']}/includes/l10n/3.1/startpage.php";
