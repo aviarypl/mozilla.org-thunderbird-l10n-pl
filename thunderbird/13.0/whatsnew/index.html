@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="shortcut icon" href="http://www.mozilla.org/thunderbird/img/favicon.ico" />
+  <title>Witamy w Thunderbirdzie!</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+  <?php include dirname(__FILE__).'/../../../../style/tb5/whatsnew.php'?>
+  </style>
+  <script src="/thunderbird/js/jquery/jquery-1.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/thunderbird/js/jquery/functions.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    $('.open ul').show();
+   });
+  </script>
+ </head>
+ <body>
+  <div id="wrapper" class="clearfix">
+   <div id="header">Dziękujemy za wybranie Thunderbirda!</div>
+
+   <div id="content">
+    <div class="column1">
+    </div>
+    <div class="column2">
+     <div class="contentHeader">
+      <h1>Co nowego w Thunderbirdzie?</h1>
+      <p>Mamy nadzieję, że nowe możliwości programu Thunderbird przypadną Wam do gustu. Thunderbirda można dopasować do własnych, nawet najbardziej niezwykłych, upodobań, zmieniając wygląd lub dodając nowe możliwości dzięki setkom dodatków.</p>
+     </div>
+
+     <div class="contentBody open">
+      <div class="toggle hbox">
+       <h2 class="boxFlex">Karty na górze</h2>
+       <span class="plus"><img src="/thunderbird/img/tb5/whatsnew/plus.png" alt="plus"></span>
+      </div>
+      <ul>
+       <li>Karty w Thunderbirdzie&nbsp;11 zostały przeniesione ponad paski narzędzi oraz menu w&nbsp;celu poprawienia nawigacji oraz uczynienia&nbsp;jej bardziej wrażliwą na&nbsp;jej&nbsp;kontekst.</li>
+       <li><img src="<?=$img1?>" alt="tabs on top"></li>
+       <li><img src="<?=$img2?>" alt="tabs on top two"></li>
+      </ul>
+     </div>
+
+     <div class="contentBody">
+      <div class="toggle hbox">
+       <h2 class="boxFlex">Szybszy, bezpieczniejszy i bardziej stabilny</h2>
+       <span class="plus"><img src="/thunderbird/img/tb5/whatsnew/plus.png" alt="plus"></span>
+      </div>
+      <ul>
+       <li>Program szybciej reaguje na polecenia użytkownika i szybciej się uruchamia.</li>
+       <li>Thunderbird 11 oparty jest o nową wersję silnika Mozilli - <a href="https://developer.mozilla.org/en/Gecko">Gecko 11</a>.</li>
+       <li>Wiele poprawek zwiększających <a href="/security/known-vulnerabilities/thunderbird.html">bezpieczeństwo</a> i stabilność programu.</li>
+      </ul>
+     </div>
+
+     <div class="contentBody">
+      <div class="toggle hbox">
+       <h2 class="boxFlex">Dodane wcześniej</h2>
+       <span class="plus"><img src="/thunderbird/img/tb5/whatsnew/plus.png" alt="plus"></span>
+      </div>
+      <ul>
+       <li>Wyszukiwanie w Internecie bezpośrednio z&nbsp;Thunderbirda. <img src="<?=$img3?>" alt="Global Search"/></li>
+       <li>Wprowadź cokolwiek w pasek wyszukiwania i wybierz „Szukaj&nbsp;w&nbsp;Internecie”, aby szukać przy użyciu wyszukiwarek Google, Wikipedii, Allegro, WP i&nbsp;innych.</li>
+       <li>Wyszukiwać w Internecie można również z&nbsp;poziomu menu kontekstowego. Wystarczy w&nbsp;wiadomości zaznaczyć słowo i wybrać „Szukaj&nbsp;w&nbsp;Internecie”.</li>
+      </ul>
+     </div>
+    </div>
+   </div>
+
+   <div id="footer">
+    <ul>
+     <li><a href="../releasenotes/">Informacje o wydaniu</a> &#187;</li>
+     <li><a href="../..">Strona domowa</a> &#187;</li>
+     <li><a href="https://support.mozillamessaging.com/en-US">Pomoc</a> &#187;</li>
+    </ul>
+   </div>
+  </div>
+ </body>
+</html>
